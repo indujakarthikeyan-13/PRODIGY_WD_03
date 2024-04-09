@@ -1,0 +1,65 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color:rgb(222, 171, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .status-container {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #status {
+    font-size: 1.2em;
+  }
+  
+  #restartButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #ff9100;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #restartButton:hover {
+    background-color: #2100b3;
+  }
+
+  #scores{
+    padding-left: 20px;
+
+  }
+  
